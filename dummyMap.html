@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dummyMap</title>
+	
+	<!-- d3.js -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+	<!-- Load Leaflet -->
+<!-- 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script> -->
+
+
+	<style type="text/css">
+
+		.circle:hover{
+		 	stroke: black;
+			stroke-width: 4px;
+		}
+
+		svg {
+			border: 1px solid lightgrey;
+		}
+
+		#mapid { 
+			height: 400px; 
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div id="sliderContainer">
+		<input id="timeslide" type="range" min="0" max="3" value="0" step="1"/><br>
+		<span id="range">2013-03-02</span>
+	</div>
+
+	<div id='mapContainer'>
+		<!-- here to put svg -->
+	</div>
+	
+	<div id="nlUni">
+	</div>
+
+
+	<!-- my js -->
+	<script type="text/javascript" src="dummyMap.js"></script>
+
+
+</body>
+
+</html>
